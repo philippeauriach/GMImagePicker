@@ -168,8 +168,13 @@ static UIColor *disabledColor;
 {
     NSInteger ti = (NSInteger)duration;
     NSInteger seconds = ti % 60;
-    NSInteger minutes = (ti / 60) % 60;
-    //NSInteger hours = (ti / 3600);
+    NSInteger minutes = (ti / 60);
+    if (minutes > 59) {
+        NSInteger hours = minutes / 60;
+        minutes = minutes % 60;
+        return [NSString stringWithFormat:@"%02ld:%02ld:%02ld", (long)hours, (long)minutes, (long)seconds];
+    }
+    
     return [NSString stringWithFormat:@"%02ld:%02ld", (long)minutes, (long)seconds];
 }
 
