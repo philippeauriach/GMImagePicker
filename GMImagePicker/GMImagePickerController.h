@@ -259,7 +259,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that the asset was selected.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was selected.
+ *  @param asset The asset that was selected.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didSelectAsset:(PHAsset *)asset;
@@ -279,7 +279,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that the item at the specified path was deselected.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was deselected.
+ *  @param asset The asset that was deselected.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didDeselectAsset:(PHAsset *)asset;
@@ -304,7 +304,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that asset was highlighted.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that was highlighted.
+ *  @param asset The asset that was highlighted.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didHighlightAsset:(PHAsset *)asset;
@@ -314,7 +314,7 @@ static CGSize const kPopoverContentSize = {480, 720};
  *  Tells the delegate that the highlight was removed from the asset.
  *
  *  @param picker    The controller object managing the assets picker interface.
- *  @param indexPath The asset that had its highlight removed.
+ *  @param asset The asset that had its highlight removed.
  *
  */
 - (void)assetsPickerController:(GMImagePickerController *)picker didUnhighlightAsset:(PHAsset *)asset;
