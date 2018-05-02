@@ -312,7 +312,7 @@
 				TargetAttributes = {
 					B37D577319CA3B3A007F64BD = {
 						CreatedOnToolsVersion = 6.0;
-						DevelopmentTeam = X5S967DLZ5;
+						DevelopmentTeam = DASAX5TMR3;
 					};
 					B37D578C19CA3B3A007F64BD = {
 						CreatedOnToolsVersion = 6.0;
